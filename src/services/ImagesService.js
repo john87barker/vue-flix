@@ -7,7 +7,7 @@ class ImagesService{
 async getImages(query){
   try {
     const res = await api.get('apod?api_key=QAQa5Qb0cwe6M47jdwK4B5R4gGh049oDquYXnYMF&date='+ query)
-    console.log(res.data)
+    // console.log(res.data)
     AppState.activeImage = new Image(res.data)
   } catch (error) {
     console.error(error)

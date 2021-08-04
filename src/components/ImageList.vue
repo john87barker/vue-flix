@@ -1,10 +1,10 @@
 <template>
-  <div class="ImageList row p-2 border bg-dark text-light rounded border-primary shadow-sm mt-2 text-left">
+  <div class="ImageList row p-2 border  text-dark rounded border-primary shadow-sm m-2 text-left">
     <form @submit.prevent="getImages">
-      <input v-model="state.query" type="date" placeholder="wait for it...!">
-      <button type="Submit">Search</button>
+      <input v-model="state.query" type="date" class="m-3">
+      <button class="btn btn-outline-primary" type="Submit">Search</button>
     </form>
-    <div class="col-12">
+    <div class="col-md-12">
       <Image/>
     </div>
   </div>

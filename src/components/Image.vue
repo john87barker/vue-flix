@@ -1,14 +1,17 @@
 <template>
   <div @click="setActiveImage" class="row">
-    <div class="col-4">
-      <img :src="image.url" alt="" class="img-fluid">
+    <div class="col-4 align-content-center">
+      <img :src="image.url" alt="" class="img-fluid" type="">
+      <hr>
+      <h4 class="text-left">{{image.copyright}}</h4>
     </div>
-    <div class="col-8">
-      <div>{{image.title}}</div>
-      <div>{{image.copyright}}</div>
-      <div>{{image.explanation}}</div>
+    <div class="col-8 pt-2">
+      <h1 class="text-center font-italic">{{image.title}}</h1>
+      <hr>
+      <div class="font-weight-lighter">{{image.explanation}}</div>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -31,3 +34,4 @@ const state = reactive({})
   }
 }
 </script>
+

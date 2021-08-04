@@ -1,22 +1,23 @@
 <template>
-  <div class="component container-fluid">
+  <div class="component container-fluid sticky-top">
     <div class="row">
-      <div class="col-12 bg-warning">
-        <img class="img-fluid bg-primary" src="../assets/logo.png" alt="vue logo" >ue Space
+      <div class="col-12 bg-dark text-light d-flex justify-content-center">
+        <img class="img-fluid align-items-center " src="../assets/logo.png" alt="vue logo" ><h1>ue Space</h1>
       </div>
     </div>
   </div>
-        <div class="col-md-12">
-          <ImageList />
-        </div>
-        <!-- <div><ImageDetails/></div> -->
+  <div class="col-md-12">
+    <ImageList />
+    
+  </div>
+  <div class="row bg-dark text-light fixed-bottom d-flex justify-content-center pb-0">⭐ 🌌 🛰 Space ☄ 🚀 🌛</div>
 </template>
 
 <script>
 
 import {reactive} from 'vue'
 import ImageList from '../components/ImageList.vue'
-// import ImageDetails from '../components/ImageDetails.vue'
+
 
 export default {
   name: 'HomePage',
@@ -33,6 +34,7 @@ const state = reactive({
 
 <style scoped>
 .img-fluid{
-  height: 5vh;
+  height: 10vh;
 }
+
 </style>
